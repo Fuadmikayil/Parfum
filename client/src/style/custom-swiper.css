@@ -1,0 +1,17 @@
+/* Swiper oxlarına xüsusi stil vermək */
+.swiper-button-next, .swiper-button-prev {
+    color: #242424 !important;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+/* Mobil uyğunlaşdırma */
+@media (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        display: none;
+    }
+}
