@@ -1,8 +1,10 @@
 import React from "react";
 import HiroImg1 from "../assets/issey-miyake-edp-edpi-hp-d.jpg";
 import HiroMImg1 from "../assets/issey-miyake-edp-edpi-hp-m.jpg";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+    const { t, i18n } = useTranslation();
   return (
     <>
       <section className=" items-center w-full relative top-0">
@@ -11,15 +13,15 @@ const Hero = () => {
           <div className="hidden  md:flex w-full h-full overflow-hidden">
             <img
               className="w-full object-cover h-[135vh] hidden md:flex"
-              src={HiroImg1}
+              src={HiroImg1}    
               alt=""
             />
           </div>
           <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white/80 to-transparent md:hidden"></div>
         </section>
         <section className="flex justify-center p-4 flex-col items-center text-xl text-center md:absolute right-24 bottom-20">
-          <a href="#" className="font-bold">
-            DISCOVER
+          <a href="#" className="font-bold uppercase">
+            {t("hirotext")}
           </a>
           <div>
             <a href="#" className="underline">
